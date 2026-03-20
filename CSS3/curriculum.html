@@ -25,10 +25,11 @@
 
     <nav>
         <ul>
-            <li><a href="#">Sobre mi</a></li>
-            <li><a href="#">Estudios</a></li>
-            <li> <a href="#">Experiencia laboral</a></li>
-            <li><a href="#">Portfolio</a></li>
+            <li><a href="#sobremi">Sobre mi</a></li>
+            <li><a href="#estudios">Estudios</a></li>
+            <li> <a href="#experiencia">Experiencia laboral</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
     <div class="container">
@@ -37,7 +38,7 @@
             <h3>Recursos</h3>
             <ul>
                 <li>
-                    <a href="#">Link 1cd
+                    <a href="#">Link 1
                         <!-- <img src="https://images.icon-icons.com/936/PNG/512/github-logo_icon-icons.com_73546.png" alt="github" width="20px">
                     Github -->
                     </a>
@@ -62,7 +63,7 @@
 
         <main>
 
-            <section>
+            <section dir="sobremi">
                 <ul>
                     <h2>Sobre mi</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -75,7 +76,7 @@
 
 
 
-            <section>
+            <section id="estudios">
                 <ul>
                     <h2>Estudios</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -85,7 +86,7 @@
 
             </section>
 
-            <section>
+            <section id="experiencia">
                 <h2>Experiencia laboral</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Nesciunt accusantium cum saepe, laboriosam modi voluptatibus fugit neque, ad nostrum
@@ -98,13 +99,44 @@
 
             </section>
 
-            <section>
+            <section id="portfolio">
                 <h2>Portfolio</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Eos non vitae, ea nisi quae recusandae ducimus.
                     Minus accusamus, esse rerum voluptas commodi nostrum dolorum sint doloribus quas quis nisi
                     deserunt?
                 </p>
+
+            </section>
+
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <form action="" method="post" id="formulario">
+                    
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="nombre" required>
+                        
+
+                        
+                        <label for="email">email</label>
+                        <input type="text" name="email" id="email" placeholder="correo electronico" required>
+                        
+
+                        
+                        <label for="telefono">Telefono</label>
+                        <input type="number" minlength="9" maxlength="11" placeholder="9 digitos o 11 con prefijo" required>
+                        
+
+                        <label for="pais">Pais</label>
+                        <select name="pais" id="pais">
+                            <option value="">elige</option>
+                            <option value="esp">España</option>
+                            <option value="mx">México</option>
+                        </select>
+
+                        <input type="button" onclick="alert('Enviado')" value="Pulsame">
+                    
+                </form>
 
             </section>
 

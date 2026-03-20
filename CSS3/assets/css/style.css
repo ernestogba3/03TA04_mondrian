@@ -1,0 +1,30 @@
+ * {
+     margin: 0;
+     /* del border al contenido hacia a fuera es el margin */
+     padding: 0;
+     /* del border al contenido hacia dentro es el padding */
+     box-sizing: border-box;
+
+     background-color: aliceblue;
+
+ }
+
+ h2 {
+     color: green;
+     margin: 25px;
+     padding: 25px;
+     border: 1px solid black;
+ }
+
+ p {
+     color: red;
+ }
+
+ .color_azul {
+     color: blueviolet;
+ }
+
+ #logo {
+     /* id sirve para acceder a la informacion */
+     margin: 50px;
+ }
